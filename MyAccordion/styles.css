@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: bisque;
+}
+
+header {
+  margin: 4% auto;
+  width: 80%;
+}
+
+header h1 {
+  font-family: Hindguntur Regular, sans-serif;
+  color: #51301d;
+}
+
+.accordion {
+  background-color: blanchedalmond;
+  border: 1px solid #ddd;
+  margin: 1% auto;
+  font-family: Hindguntur Regular, sans-serif;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 32px;
+  width: 80%;
+  padding: 20px;
+}
+
+.accordion-item {
+  margin-bottom: 2px;
+  cursor: pointer;
+}
+
+.accordion-title {
+  background-color: #51301d;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.question {
+  width: 80%;
+  text-align: left;
+  width: 100%;
+  color: #fff;
+  margin-top: 5px;
+  font-family: Hindguntur Light, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.accordion-title:hover {
+  background-color: #754b33;
+}
+
+.accordion-content {
+  padding: 10px;
+  display: none;
+  border-radius: 4px;
+  background-image: url("../images/TEXTURE.png");
+  width: 100%;
+  margin: 2px 0 8px 0;
+}
+
+.accordion-content p {
+  font-family: Hindguntur Light, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+  color: #51301d;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.accordion-title i {
+  color: aliceblue;
+}
+
+.arrow-two {
+  float: right;
+  transition: transform 0.5s ease;
+}
+
+.active .arrow-two {
+  transform: rotate(180deg);
+}
