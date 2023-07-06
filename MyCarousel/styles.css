@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(244, 230, 214);
+}
+
+header {
+  margin: 2% auto;
+  width: 75%;
+  align-content: center;
+}
+
+header h1 {
+  color: #51301d;
+  font-family: Linbiolinum R G, sans-serif;
+  align-content: center;
+}
+
+.slider {
+  width: 90%;
+  position: relative;
+  margin: 2% auto;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  animation: slideAnimation 2s;
+}
+
+@keyframes slideAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide {
+  width: 100%;
+  height: fit-content;
+  min-height: 200px;
+}
+
+.carousel-container {
+  margin: 2% auto;
+  width: 80%;
+  display: flex;
+}
+
+.nav-btns {
+  padding-top: 16%;
+}
+
+.nav-btns:hover {
+  cursor: pointer;
+}
+
+.nav-btns i {
+  color: #51301d;
+}
+
+.carousel-slide {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.carousel-card {
+  background-color: #e8d4b2;
+  padding: 30px;
+  margin: 5px;
+  max-width: 33%;
+  min-height: 276px;
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 9px 11px 14px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  z-index: 1;
+}
+
+.stars i {
+  color: #51301d;
+  size: 10px;
+}
+
+.carousel-card .content-review {
+  color: #51301d;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  text-align: left;
+  font-family: Hindguntur Light, sans-serif;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.reviewer .name-reviewer {
+  color: #51301d;
+  font-family: "Hind Guntur", Sans-serif;
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.reviewer .address-reviewer {
+  margin-top: 0px;
+  color: #51301d;
+}
