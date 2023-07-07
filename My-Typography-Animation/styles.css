@@ -1,0 +1,37 @@
+body {
+  background: #7d75ae;
+  font-family: sans-serif;
+}
+
+header h1 {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+}
+
+.container {
+  background-color: #d9cce1;
+  width: 50%;
+  border-radius: 4px;
+  padding: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.paragraph span {
+  display: block;
+  opacity: 0;
+  animation: reveal 0.5s forwards var(--d);
+}
+
+@keyframes reveal {
+  from {
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
